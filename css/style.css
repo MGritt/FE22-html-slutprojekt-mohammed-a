@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
  }
- 
+
  body {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;;
     margin: 0;
@@ -17,11 +17,15 @@
     margin-block-start: 0;
   }
 
+header {
+     position:fixed;
+     height:100vh;
+}
+
 /*Sidebar*/
 .sideBar {
    height:100%;
    width: 90px;
-   position:fixed;
    display: flex;
    flex-direction: column;
    color:#D8A2FA;
@@ -87,7 +91,7 @@ img.gitPink {
    margin-top:1em;
    color: inherit;
  }
- 
+
  .sideBar:hover > .logo a span {
    opacity:1;
    transition: all 1s ease;
@@ -107,36 +111,36 @@ img.gitPink {
 @media only screen and (min-width: 960px) {
     .logo img {
        padding-top:1.25rem;
-    }   
- 
+    }
+
     .logo a span {
        font-size: 2rem;
      }
-    
+
      .logo a {
        font-size: 3.5rem;
       }
-    
+
       .logo a p {
        font-size: 1.75rem;
      }
   }
-  
+
 
  @media only screen and (min-width: 1280px) {
    .logo a img {
       padding-top:2rem;
-   }   
+   }
 
    .logo a span {
       font-size: 3rem;
     }
-   
+
     .logo a {
       font-size: 4rem;
       letter-spacing:1rem;
      }
-   
+
      .logo a p {
       letter-spacing:.5rem;
       font-size: 2rem;
@@ -174,11 +178,11 @@ margin-left:90px;
     margin-block-end: 0;
     padding-inline-start:0;
  }
- 
+
  .mainNav li {
    padding-bottom: 2rem;
    padding-top: 2rem;
-   flex: 1;    
+   flex: 1;
   }
 
   .mainNav li a{
@@ -191,7 +195,7 @@ margin-left:90px;
    @media only screen and (max-width: 1280px) {
       .mainNav li {
          padding-bottom: 1rem;
-         padding-top: 1rem; 
+         padding-top: 1rem;
         }
       .mainNav li a{
          padding-inline-start: 1rem;
@@ -200,7 +204,7 @@ margin-left:90px;
          color:white;
          }
    }
-   
+
    @media only screen and (max-width: 960px) {
       .mainNav li a{
          padding-inline-start: 1rem;
@@ -239,7 +243,7 @@ margin-left:90px;
       width:100%;
    }
 
- 
+
 /*Portfolio container*/
  .portfolioContainer {
    margin-left:90px;
@@ -258,7 +262,7 @@ margin-left:90px;
        grid-template-columns: 50% 50%;
      }
  }
- 
+
 
  .grid-item {
    height:100%;
@@ -284,14 +288,14 @@ margin-left:90px;
     background: #0c0a0f;
     letter-spacing:0.1rem;
     font-size: 2rem;
-    color:#D8A2FA;  
+    color:#D8A2FA;
     padding: 1rem;
     text-align: center;
   }
- 
+
 .grid-item:hover > a h3 {
    background: #D8A2FA;
-   color:white;  
+   color:white;
    transition: all 0.3s ease;
 }
 
@@ -304,7 +308,7 @@ margin-left:90px;
      }
      .grid-item.firstGrid h3 {
            background: #D8A2FA;
-           color:white;  
+           color:white;
            transition: all 0.3s ease;
      }
 }
@@ -322,7 +326,7 @@ margin-left:90px;
        margin-left:120px;
      }
  }
- 
+
  @media only screen and (min-width: 1280px) {
      .projectContainer {
         margin-left:160px;
@@ -336,7 +340,7 @@ margin-left:90px;
     background: #0c0a0f;
     letter-spacing:0.1rem;
     font-size: 2.5rem;
-    color:#D8A2FA;  
+    color:#D8A2FA;
     padding: 0rem 0rem 1rem 0rem;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -345,7 +349,7 @@ margin-left:90px;
   .projectContainer h3 {
     letter-spacing:0.1rem;
     font-size: 1.75rem;
-    color:white;  
+    color:white;
   }
 
   @media only screen and (min-width: 960px) {
@@ -414,14 +418,14 @@ margin-left:90px;
     letter-spacing:0.1rem;
     font-size: 2rem;
     font-weight:500;
-    color:#D8A2FA;  
+    color:#D8A2FA;
     padding: 1rem;
     text-align: center;
  }
 
 .pLinks a:hover  {
      color:white;
-     background:#D8A2FA;  
+     background:#D8A2FA;
     }
 
 /*About Me Container*/
@@ -437,7 +441,7 @@ margin-left:90px;
        grid-template-columns: auto 50%;
      }
  }
- 
+
  @media only screen and (min-width: 1280px) {
      .aboutContainer {
         margin-left:160px;
@@ -458,18 +462,18 @@ margin-left:90px;
     background: #0c0a0f;
     letter-spacing:0.1rem;
     font-size: 3rem;
-    color:#D8A2FA;  
+    color:#D8A2FA;
     margin-block-start: 0;
     margin-block-end: 0;
   }
- 
+
   .profile p {
     color:white;
     font-size:1rem;
     max-width:100%;
     margin-block-start: 0;
  }
- 
+
 
 /*Footer*/
  footer {
